@@ -8,3 +8,19 @@
 #image_logo {
     font-size: 5rem !important;
 }
+
+#gold_color{
+	color:rgb(240,165,0) !important;
+}
+
+#bg_gold{
+background-color: rgb(240,165,0) !important;
+}
+
+#bg_white{
+    background-color: white;
+}
+
+#white_color{
+    color: white;
+}
