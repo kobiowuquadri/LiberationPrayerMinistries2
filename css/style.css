@@ -17,6 +17,11 @@
 background-color: rgb(240,165,0) !important;
 }
 
+.bg{
+    background-color: green !important;
+    font-size: 3rem !important;
+}
+
 #bg_white{
     background-color: white;
 }
