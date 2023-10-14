@@ -62,6 +62,59 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+
+#donate{
+	background-color: white !important;
+}
+#donatehero{
+	background-color: #290b3b !important;
+	width: 50% !important;
+	margin: 0 auto !important;
+	padding: 40px !important;
+}
+#donatetop{
+	display: flex !important;
+	justify-content: center !important;
+	color: #290b3b !important;
+	margin: 0 auto !important;
+}
+#donatetop p{
+	padding: 20px 50px 20px 50px !important;
+	font-weight: bold !important;
+	cursor: pointer;
+}
+#donategiveonce{
+	background-color: white !important;
+}
+#donatemonthly{
+	color: white !important;
+	background-color: #290b3b !important;
+	border: 2px solid white;
+}
+#donatebody{
+	background-color: white !important;
+	color: black !important;
+	padding: 40px !important;
+	margin-top: 20px !important;
+}
+#donateinput{
+	margin-bottom: 30px !important;
+	border-color: grey;
+}
+#donatebtn{
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+	color: white;
+	background-color: orange;
+}
+
+
+@media (max-width: 900px){
+	#donatehero{
+		width: 100% !important;
+	}
+}
 </style>
 	<link rel='stylesheet' id='dce-animations-css' href='../wp-content/plugins/dynamic-content-for-elementor/assets/css/animations333a.css?ver=1.14.5' media='all' />
 <link rel='stylesheet' id='mec-select2-style-css' href='../wp-content/plugins/modern-events-calendar/assets/packages/select2/select2.minc7bd.css?ver=5.19.5' media='all' />
@@ -439,7 +492,7 @@ body.custom-background { background-color: #360051; }
 								</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-60c6b2ad elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="60c6b2ad" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-60c6b2ad elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="60c6b2ad" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 						<div class="elementor-container elementor-column-gap-wider">
 							<div class="elementor-row">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1e1ea647" data-id="1e1ea647" data-element_type="column">
@@ -715,8 +768,31 @@ body.custom-background { background-color: #360051; }
 		</div>
 								</div>
 					</div>
-		</section>
-						</div>
+		</section> -->
+	
+	<section id="donate">
+		<div id="donatehero">
+			<div id="donatetop">
+				<p id="donategiveonce">GIVE ONCE</p> <p id="donatemonthly">MONTHLY</p>
+			</div>
+			<div id="donatebody">
+				<p>First Name</p>
+				<input type="text" id="donateinput">
+				
+				<p>Last Name</p>
+				<input type="text" id="donateinput">
+				
+				<p>Email Address</p>
+				<input type="email" name="email" id="donateinput">
+				
+				<p>Amount</p>
+				<input type="text" id="donateinput">
+
+				<div id="donatebtn"><button id="donatebtn">DONATE</button></div>
+			</div>
+		</div>
+	</section>				
+				</div>
 						</div>
 					</div>
 				<div data-elementor-type="footer" data-elementor-id="274" data-post-id="1818" data-obj-id="1818" class="elementor elementor-274 dce-elementor-post-1818 elementor-location-footer" data-elementor-settings="[]">
