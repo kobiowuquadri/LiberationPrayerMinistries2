@@ -4,7 +4,12 @@
        /* background-size: contain !important; */
        height: 100vh !important;
     }
+    #small__text{
+        font-size: 1.8rem !important;
+    }
 }
+
+
 
 #image_logo {
     font-size: 5rem !important;
