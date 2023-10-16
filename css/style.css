@@ -1,6 +1,7 @@
 @media (max-width:968px){
     #bg_change{
-       background-size: contain !important;
+        /* margin-top: 10% !important; */
+       /* background-size: contain !important; */
        height: 100vh !important;
     }
 }
