@@ -1,4 +1,4 @@
-@media (max-width:968px){
+@media (max-width:768px){
     #bg_change{
         /* margin-top: 10% !important; */
        /* background-size: contain !important; */
@@ -6,6 +6,18 @@
     }
     #small__text{
         font-size: 1.8rem !important;
+    }
+    .con {
+        background-color:rgb(106,175,252);
+    }
+    #bg_switch {
+        background-size: contain !important;
+        background-repeat: repeat;
+        border: none;
+    }
+
+    #bg____switch {
+        background-size: contain;
     }
 }
 
