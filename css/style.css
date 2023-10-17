@@ -34,11 +34,11 @@
 }
 
 .elementor-col-33 img {
-    width: 100% !important;  /* Set the image width to 100% */
-    height: auto !important; /* Maintain aspect ratio */
+    width: 200px !important; /* Set a specific width */
+    height: 100px !important; /* Set a specific height */
     font-weight: bolder !important;
     background-color: white !important;
-    border-radius: 50% !important;
+    border-radius: 50% !important; /* Creates an oval shape */
     font-size: 5rem !important;
 }
 
