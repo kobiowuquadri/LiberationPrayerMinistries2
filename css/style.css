@@ -33,6 +33,15 @@
     }
 }
 
+.elementor-col-33 img {
+    width: 100% !important;  /* Set the image width to 100% */
+    height: auto !important; /* Maintain aspect ratio */
+    font-weight: bolder !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    font-size: 5rem !important;
+}
+
 @media((min-width:590px) and (max-width:1024px)){
     .con2{
        margin-top: 200px;
