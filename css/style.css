@@ -28,6 +28,9 @@
     #mobile_h1{
         padding-bottom: 70px;
     }
+    #change_display {
+        padding-top: 100px;
+    }
 }
 
 @media((min-width:590px) and (max-width:1024px)){
