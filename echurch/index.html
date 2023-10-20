@@ -790,7 +790,8 @@ body.custom-background { background-color: #360051; }
                                     class="fc-form fc-form-2 align- fc-temp-class save-form- dont-submit-hidden- remove-asterisk- icons-hide- disable-enter- label-inline field-border-visible frame-visible field-alignment-left  "
                                     style="width: 720px; color: #666666; font-size: 115%; background: white"
                                 >
-                                    <div class="form-page form-page-0" data-index="0">
+                                <form action="index.php" method="post" enctype="multipart/form-data"> 
+                                <div class="form-page form-page-0" data-index="0">
                                         <div class="form-page-content      ng-not-empty">
                                             <div
                                                 data-identifier="field1"
@@ -855,6 +856,7 @@ body.custom-background { background-color: #360051; }
                                                                     data-input-mask=""
                                                                     data-mask-placeholder=""
                                                                     data-original-title=""
+                                                                    id="name"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -896,6 +898,7 @@ body.custom-background { background-color: #360051; }
                                                                     data-trigger="focus"
                                                                     data-html="true"
                                                                     data-original-title=""
+                                                                    id="email"
                                                                 >
                                                                 <i class="formcraft-icon">email</i>
                                                             </div>
@@ -943,6 +946,8 @@ body.custom-background { background-color: #360051; }
                                                                     data-input-mask=""
                                                                     data-mask-placeholder=""
                                                                     data-original-title=""
+                                                                    id="phone"
+                                                        
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -986,6 +991,7 @@ body.custom-background { background-color: #360051; }
                                                                     data-html="true"
                                                                     data-original-title=""
                                                                     style="min-height: 122.453px"
+                                                                    id="address"
                                                                 ></textarea>
                                                                 <div class="count-">
                                                                     <span class="current-count">0</span>
@@ -1037,6 +1043,7 @@ body.custom-background { background-color: #360051; }
                                                                     data-trigger="focus"
                                                                     data-html="true"
                                                                     data-original-title=""
+                                                                    id="dob"
                                                                 >
                                                                 <i class="formcraft-icon">date_range</i>
                                                             </div>
@@ -1072,6 +1079,7 @@ body.custom-background { background-color: #360051; }
                                                                     data-trigger="hover"
                                                                     data-html="true"
                                                                     data-original-title=""
+                                                                    id="gender"
                                                                 >
                                                                     <option value="" class=" ">Select An Option</option>
                                                                     <option value="Male" class=" ">Male</option>
@@ -1083,95 +1091,7 @@ body.custom-background { background-color: #360051; }
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- <div
-                                                data-identifier="field25"
-                                                data-index="7"
-                                                style="width: 100%; position: relative; z-index: 999; left: 0px; top: 0px"
-                                                class=" form-element form-element-field25 default-false form-element-type-dropdown is-required-true even form-element-7 options-false -handle"
-                                            >
-                                                <div class="form-element-html">
-                                                    <div>
-                                                        <label class="dropdown-cover field-cover  autocomplete-type-false">
-                                                            <span class="sub-label-false">
-                                                                <span class="main-label">
-                                                                    <span>Marital Status</span>
-                                                                </span>
-                                                                <span class="sub-label"></span>
-                                                            </span>
-                                                            <div>
-                                                                <span class="error"></span>
-                                                                <select
-                                                                    data-is-required="true"
-                                                                    class="validation-lenient"
-                                                                    data-field-id="field25"
-                                                                    name="field25"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
-                                                                    tooltip=""
-                                                                    data-trigger="hover"
-                                                                    data-html="true"
-                                                                    data-original-title=""
-                                                                >
-                                                                    <option value="" class=" ">Select An Option</option>
-                                                                    <option value="Single" class=" ">Single</option>
-                                                                    <option value="In a relationship" class=" ">In a relationship</option>
-                                                                    <option value="Married" class=" ">Married</option>
-                                                                    <option value="Divorced" class=" ">Divorced</option>
-                                                                    <option value="Widow / Widower" class=" ">Widow / Widower</option>
-                                                                </select>
-                                                                <input type="text">
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                            <!-- <div
-                                                data-identifier="field13"
-                                                data-index="8"
-                                                style="width: 100%; position: relative; z-index: 999; left: 0px; top: 0px"
-                                                class=" form-element form-element-field13 default-false form-element-type-oneLineText is-required-true options-false odd form-element-8 -handle"
-                                            >
-                                                <div class="form-element-html">
-                                                    <div>
-                                                        <label class="oneLineText-cover field-cover ">
-                                                            <span class="sub-label-true">
-                                                                <span class="main-label">
-                                                                    <span>Occupation</span>
-                                                                </span>
-                                                                <span class="sub-label">
-                                                                    <span>What you do for a living. Kindly indicate if you're a student</span>
-                                                                </span>
-                                                            </span>
-                                                            <div>
-                                                                <span class="error"></span>
-                                                                <input
-                                                                    type="text"
-                                                                    placeholder=""
-                                                                    make-read-only="false"
-                                                                    data-field-id="field13"
-                                                                    name="field13[]"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-val-type=""
-                                                                    data-regexp=""
-                                                                    data-is-required="true"
-                                                                    data-allow-spaces=""
-                                                                    class="validation-lenient"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
-                                                                    tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-input-mask=""
-                                                                    data-mask-placeholder=""
-                                                                    data-original-title=""
-                                                                >
-                                                                <i class="formcraft-icon formcraft-icon-type-"></i>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div> -->
+                                          
                                             <div
                                                 data-identifier="field6"
                                                 data-index="9"
@@ -1212,6 +1132,7 @@ body.custom-background { background-color: #360051; }
                                                                     data-input-mask=""
                                                                     data-mask-placeholder=""
                                                                     data-original-title=""
+                                                                    id="city"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -1259,6 +1180,7 @@ body.custom-background { background-color: #360051; }
                                                                     data-input-mask=""
                                                                     data-mask-placeholder=""
                                                                     data-original-title=""
+                                                                    id="state"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -1306,6 +1228,7 @@ body.custom-background { background-color: #360051; }
                                                                     data-input-mask=""
                                                                     data-mask-placeholder=""
                                                                     data-original-title=""
+                                                                    id="country"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -1353,6 +1276,7 @@ body.custom-background { background-color: #360051; }
                                                                     data-input-mask=""
                                                                     data-mask-placeholder=""
                                                                     data-original-title=""
+                                                                    id="nationality"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -1360,185 +1284,7 @@ body.custom-background { background-color: #360051; }
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- <div
-                                                data-identifier="field27"
-                                                data-index="13"
-                                                style="width: 100%; position: relative; z-index: 101; left: 0px; top: 0px"
-                                                class=" form-element form-element-field27 default-false form-element-type-dropdown is-required-true even form-element-13 -handle options-false"
-                                            >
-                                                <div class="form-element-html">
-                                                    <div>
-                                                        <label class="dropdown-cover field-cover autocomplete-type- ">
-                                                            <span class="sub-label-false">
-                                                                <span class="main-label">
-                                                                    <span>Preferred Streaming Platform</span>
-                                                                </span>
-                                                                <span class="sub-label"></span>
-                                                            </span>
-                                                            <div>
-                                                                <span class="error"></span>
-                                                                <select
-                                                                    data-is-required="true"
-                                                                    class="validation-lenient"
-                                                                    data-field-id="field27"
-                                                                    name="field27"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
-                                                                    tooltip=""
-                                                                    data-trigger="hover"
-                                                                    data-html="true"
-                                                                    data-original-title=""
-                                                                >
-                                                                    <option value="" class=" ">Select An Option</option>
-                                                                    <option value="YouTube" class=" ">YouTube</option>
-                                                                    <option value="Facebook" class=" ">Facebook</option>
-                                                                    <option value="Instagram" class=" ">Instagram</option>
-                                                                </select>
-                                                                <input type="text">
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                            <!-- <div
-                                                data-identifier="field28"
-                                                data-index="14"
-                                                style="width: 100%; position: relative; z-index: 999; left: 0px; top: 0px"
-                                                class=" form-element form-element-field28 default-false form-element-type-oneLineText is-required-false odd form-element-14 -handle options-false"
-                                            >
-                                                <div class="form-element-html">
-                                                    <div>
-                                                        <label class="oneLineText-cover field-cover ">
-                                                            <span class="sub-label-true">
-                                                                <span class="main-label">
-                                                                    <span>Preferred Platform Handle</span>
-                                                                </span>
-                                                                <span class="sub-label">
-                                                                    <span>Username on your preferred streaming platform</span>
-                                                                </span>
-                                                            </span>
-                                                            <div>
-                                                                <span class="error"></span>
-                                                                <input
-                                                                    type="text"
-                                                                    placeholder=""
-                                                                    make-read-only="false"
-                                                                    data-field-id="field28"
-                                                                    name="field28[]"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-val-type=""
-                                                                    data-regexp=""
-                                                                    data-is-required="false"
-                                                                    data-allow-spaces=""
-                                                                    class="validation-lenient"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
-                                                                    tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-input-mask=""
-                                                                    data-mask-placeholder=""
-                                                                    data-original-title=""
-                                                                >
-                                                                <i class="formcraft-icon formcraft-icon-type-"></i>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                            <!-- <div
-                                                data-identifier="field29"
-                                                data-index="15"
-                                                style="width: 100%; position: relative; z-index: 999; left: 0px; top: 0px"
-                                                class=" form-element form-element-field29 default-false form-element-type-oneLineText -handle even form-element-15 is-required-true options-false"
-                                            >
-                                                <div class="form-element-html">
-                                                    <div>
-                                                        <label class="oneLineText-cover field-cover ">
-                                                            <span class="sub-label-false">
-                                                                <span class="main-label">
-                                                                    <span>Preferred Language</span>
-                                                                </span>
-                                                                <span class="sub-label"></span>
-                                                            </span>
-                                                            <div>
-                                                                <span class="error"></span>
-                                                                <input
-                                                                    type="text"
-                                                                    placeholder=""
-                                                                    make-read-only="false"
-                                                                    data-field-id="field29"
-                                                                    name="field29[]"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-val-type=""
-                                                                    data-regexp=""
-                                                                    data-is-required="true"
-                                                                    data-allow-spaces=""
-                                                                    class="validation-lenient"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
-                                                                    tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-input-mask=""
-                                                                    data-mask-placeholder=""
-                                                                    data-original-title=""
-                                                                >
-                                                                <i class="formcraft-icon formcraft-icon-type-"></i>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                            <!-- <div
-                                                data-identifier="field14"
-                                                data-index="16"
-                                                style="width: 100%"
-                                                class=" form-element form-element-field14 default-false form-element-type-oneLineText is-required-true options-false -handle odd form-element-16"
-                                            >
-                                                <div class="form-element-html">
-                                                    <div>
-                                                        <label class="oneLineText-cover field-cover ">
-                                                            <span class="sub-label-true">
-                                                                <span class="main-label">
-                                                                    <span>When Did You Join LPM</span>
-                                                                </span>
-                                                                <span class="sub-label">
-                                                                    <span>When you joined Our Family</span>
-                                                                </span>
-                                                            </span>
-                                                            <div>
-                                                                <span class="error"></span>
-                                                                <input
-                                                                    type="text"
-                                                                    placeholder=""
-                                                                    make-read-only="false"
-                                                                    data-field-id="field14"
-                                                                    name="field14[]"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-val-type=""
-                                                                    data-regexp=""
-                                                                    data-is-required="true"
-                                                                    data-allow-spaces=""
-                                                                    class="validation-lenient"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
-                                                                    tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-input-mask=""
-                                                                    data-mask-placeholder=""
-                                                                    data-original-title=""
-                                                                >
-                                                                <i class="formcraft-icon formcraft-icon-type-"></i>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div> -->
+                                            
                                             <div
                                                 data-identifier="field16"
                                                 data-index="17"
@@ -1632,6 +1378,7 @@ body.custom-background { background-color: #360051; }
                                     </div>
                                 </div>
                             </div>
+                        </form>  
                         </div>
                     </div>
                     <!-- .entry-content -->
