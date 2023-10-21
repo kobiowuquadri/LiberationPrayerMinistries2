@@ -790,7 +790,7 @@ body.custom-background { background-color: #360051; }
                                     class="fc-form fc-form-2 align- fc-temp-class save-form- dont-submit-hidden- remove-asterisk- icons-hide- disable-enter- label-inline field-border-visible frame-visible field-alignment-left  "
                                     style="width: 720px; color: #666666; font-size: 115%; background: white"
                                 >
-                                <form action="index.php" method="post" enctype="multipart/form-data"> 
+                                
                                 <div class="form-page form-page-0" data-index="0">
                                         <div class="form-page-content      ng-not-empty">
                                             <div
@@ -822,10 +822,11 @@ body.custom-background { background-color: #360051; }
                                                 
                                                 class=" even form-element form-element-field3 options-false form-element-1 default-false form-element-type-oneLineText is-required-true -handle"
                                             >
-                                                <div class="form-element-html">
-                                                    <div>
-                                                        <label class="oneLineText-cover field-cover ">
-                                                            <span class="sub-label-true">
+      <div class="form-element-html">
+          <div>
+            <form action="/echurch/index.php" method="POST">
+         <label class="oneLineText-cover field-cover ">
+         <span class="sub-label-true">
                                                                 <span class="main-label">
                                                                     <span>Name</span>
                                                                 </span>
@@ -839,24 +840,12 @@ body.custom-background { background-color: #360051; }
                                                                     type="text"
                                                                     placeholder=""
                                                                     make-read-only="false"
-                                                                    data-field-id="field3"
-                                                                    name="field3[]"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-val-type=""
-                                                                    data-regexp=""
-                                                                    data-is-required="true"
-                                                                    data-allow-spaces="true"
                                                                     class="validation-lenient"
                                                                     data-placement="right"
                                                                     data-toggle="tooltip"
                                                                     tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-input-mask=""
-                                                                    data-mask-placeholder=""
-                                                                    data-original-title=""
                                                                     id="name"
+                                                                    name="name"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -885,20 +874,15 @@ body.custom-background { background-color: #360051; }
                                                                 <span class="error"></span>
                                                                 <input
                                                                     placeholder=""
+                                                                    class="validation-lenient"
+                                                                    tooltip=""
+                                                                    id="email"
+                                                                    name="email"
                                                                     data-field-id="field9"
                                                                     type="text"
                                                                     data-val-type="email"
                                                                     make-read-only=""
                                                                     data-is-required="true"
-                                                                    name="field9"
-                                                                    class="validation-lenient"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
-                                                                    tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-original-title=""
-                                                                    id="email"
                                                                 >
                                                                 <i class="formcraft-icon">email</i>
                                                             </div>
@@ -929,25 +913,12 @@ body.custom-background { background-color: #360051; }
                                                                     type="text"
                                                                     placeholder=""
                                                                     make-read-only="false"
-                                                                    data-field-id="field11"
-                                                                    name="field11[]"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-val-type="numbers"
-                                                                    data-regexp=""
-                                                                    data-is-required="true"
-                                                                    data-allow-spaces=""
                                                                     class="validation-lenient"
                                                                     data-placement="right"
                                                                     data-toggle="tooltip"
                                                                     tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-input-mask=""
-                                                                    data-mask-placeholder=""
-                                                                    data-original-title=""
                                                                     id="phone"
-                                                        
+                                                                    name="phone"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -978,20 +949,12 @@ body.custom-background { background-color: #360051; }
                                                                     data-field-id="field20"
                                                                     placeholder=""
                                                                     class="validation-lenient"
-                                                                    name="field20"
                                                                     value=""
                                                                     rows="5"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-is-required="false"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
                                                                     tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-original-title=""
                                                                     style="min-height: 122.453px"
                                                                     id="address"
+                                                                    name="address"
                                                                 ></textarea>
                                                                 <div class="count-">
                                                                     <span class="current-count">0</span>
@@ -1022,7 +985,7 @@ body.custom-background { background-color: #360051; }
                                                                 <span class="error"></span>
                                                                 <input
                                                                     autocomplete="off"
-                                                                    data-field-id="field23"
+
                                                                     placeholder=""
                                                                     type="text"
                                                                     class="validation-lenient    hasDatepicker ng-empty"
@@ -1031,19 +994,8 @@ body.custom-background { background-color: #360051; }
                                                                     data-date-min-range=""
                                                                     data-date-format="dd/mm/yy"
                                                                     data-date-days="{&quot;0&quot;:true,&quot;1&quot;:true,&quot;2&quot;:true,&quot;3&quot;:true,&quot;4&quot;:true,&quot;5&quot;:true,&quot;6&quot;:true}"
-                                                                    data-date-min=""
-                                                                    data-date-min-alt=""
-                                                                    data-date-max-alt=""
-                                                                    data-date-max=""
-                                                                    data-date-lang="en"
-                                                                    name="field23"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
-                                                                    tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-original-title=""
                                                                     id="dob"
+                                                                    name="dob"
                                                                 >
                                                                 <i class="formcraft-icon">date_range</i>
                                                             </div>
@@ -1072,7 +1024,6 @@ body.custom-background { background-color: #360051; }
                                                                     data-is-required="true"
                                                                     class="validation-lenient"
                                                                     data-field-id="field26"
-                                                                    name="field26"
                                                                     data-placement="right"
                                                                     data-toggle="tooltip"
                                                                     tooltip=""
@@ -1080,6 +1031,7 @@ body.custom-background { background-color: #360051; }
                                                                     data-html="true"
                                                                     data-original-title=""
                                                                     id="gender"
+                                                                    name="gender"
                                                                 >
                                                                     <option value="" class=" ">Select An Option</option>
                                                                     <option value="Male" class=" ">Male</option>
@@ -1115,24 +1067,14 @@ body.custom-background { background-color: #360051; }
                                                                     type="text"
                                                                     placeholder=""
                                                                     make-read-only="false"
-                                                                    data-field-id="field6"
-                                                                    name="field6[]"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-val-type=""
-                                                                    data-regexp=""
                                                                     data-is-required="true"
                                                                     data-allow-spaces="true"
                                                                     class="validation-lenient"
                                                                     data-placement="right"
                                                                     data-toggle="tooltip"
                                                                     tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-input-mask=""
-                                                                    data-mask-placeholder=""
-                                                                    data-original-title=""
                                                                     id="city"
+                                                                    name="city"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -1162,25 +1104,14 @@ body.custom-background { background-color: #360051; }
                                                                 <input
                                                                     type="text"
                                                                     placeholder=""
-                                                                    make-read-only="false"
-                                                                    data-field-id="field5"
-                                                                    name="field5[]"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-val-type=""
-                                                                    data-regexp=""
                                                                     data-is-required="true"
                                                                     data-allow-spaces="true"
                                                                     class="validation-lenient"
                                                                     data-placement="right"
                                                                     data-toggle="tooltip"
                                                                     tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-input-mask=""
-                                                                    data-mask-placeholder=""
-                                                                    data-original-title=""
                                                                     id="state"
+                                                                    name="state"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -1211,24 +1142,10 @@ body.custom-background { background-color: #360051; }
                                                                     type="text"
                                                                     placeholder=""
                                                                     make-read-only="false"
-                                                                    data-field-id="field2"
-                                                                    name="field2[]"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-val-type="alphabets"
-                                                                    data-regexp=""
-                                                                    data-is-required="true"
-                                                                    data-allow-spaces="true"
                                                                     class="validation-lenient"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
                                                                     tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-input-mask=""
-                                                                    data-mask-placeholder=""
-                                                                    data-original-title=""
                                                                     id="country"
+                                                                    name="country"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -1259,24 +1176,10 @@ body.custom-background { background-color: #360051; }
                                                                     type="text"
                                                                     placeholder=""
                                                                     make-read-only="false"
-                                                                    data-field-id="field7"
-                                                                    name="field7[]"
-                                                                    data-min-char=""
-                                                                    data-max-char=""
-                                                                    data-val-type="alphabets"
-                                                                    data-regexp=""
-                                                                    data-is-required="true"
-                                                                    data-allow-spaces="true"
                                                                     class="validation-lenient"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
                                                                     tooltip=""
-                                                                    data-trigger="focus"
-                                                                    data-html="true"
-                                                                    data-input-mask=""
-                                                                    data-mask-placeholder=""
-                                                                    data-original-title=""
                                                                     id="nationality"
+                                                                    name="nationality"
                                                                 >
                                                                 <i class="formcraft-icon formcraft-icon-type-"></i>
                                                             </div>
@@ -1291,45 +1194,7 @@ body.custom-background { background-color: #360051; }
                                                 style="width: 100%"
                                                 class=" form-element form-element-field16 default-false form-element-type-fileupload is-required-false options-false -handle even form-element-17"
                                             >
-                                                <div class="form-element-html">
-                                                    <div>
-                                                        <label class="wide- fileupload-cover field-cover">
-                                                            <span class="sub-label-">
-                                                                <span class="main-label">
-                                                                    <span>Your Picture</span>
-                                                                </span>
-                                                                <span class="sub-label">
-                                                                    <span>So we can put a face to your name</span>
-                                                                </span>
-                                                            </span>
-                                                            <div>
-                                                                <span class="error"></span>
-                                                                <div
-                                                                    class="button button-file fileupload-button"
-                                                                    data-placement="right"
-                                                                    data-toggle="tooltip"
-                                                                    tooltip=""
-                                                                    data-trigger="hover"
-                                                                    data-html="true"
-                                                                    data-original-title=""
-                                                                >
-                                                                    <i class="icon-upload-cloud formcraft-icon">cloud_upload</i>
-                                                                    <span>Jpg or Png</span>
-                                                                    <input
-                                                                        type="file"
-                                                                        data-name-list="field16"
-                                                                        name="files"
-                                                                        multiple="multiple"
-                                                                        data-allow-extensions=""
-                                                                        data-min-files=""
-                                                                        data-max-files=""
-                                                                        data-max-size=""
-                                                                    >
-                                                                </div>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                                <!--  -->
                                             </div>
                                             <div
                                                 data-identifier="field15"
@@ -1341,10 +1206,10 @@ body.custom-background { background-color: #360051; }
                                                     <div>
                                                         <div class="align-right wide-false submit-cover field-cover">
                                                             <button type="submit" class="button submit-button">
-                                                                <span class="text ">Submit Form</span>
-                                                                <span class="spin-cover">
+                                                                <span class="text "  type="submit">Submit Form</span>
+                                                                <!-- <span class="spin-cover">
                                                                     <i class="loading-icon icon-cog animate-spin"></i>
-                                                                </span>
+                                                                </span> -->
                                                             </button>
                                                         </div>
                                                         <div class="submit-response "></div>
@@ -1358,11 +1223,13 @@ body.custom-background { background-color: #360051; }
                                                         </label>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> </form>
                                         </div>
                                     </div>
                                     <!-- end ngRepeat: page in Builder.FormElements track by $index -->
                                 </form>
+
+
                                 <div class="prev-next prev-next-1" style="width: 720px; color: #666666; font-size: 115%; background: white">
                                     <div>
                                         <span class="inactive page-prev ">
@@ -1379,6 +1246,7 @@ body.custom-background { background-color: #360051; }
                                 </div>
                             </div>
                         </form>  
+                        
                         </div>
                     </div>
                     <!-- .entry-content -->
@@ -1389,6 +1257,7 @@ body.custom-background { background-color: #360051; }
             </article>
             <!-- .post -->
         </main>
+    
         <!-- #site-content -->
         <div
             data-elementor-type="footer"

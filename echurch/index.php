@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
@@ -13,56 +13,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $country = $_POST["country"];
     $nationality = $_POST["nationality"];
 
-    // Handle the picture upload
-    $picture_tmp = $_FILES["picture"]["tmp_name"];
-    $picture_name = $_FILES["picture"]["name"];
-    $picture_extension = pathinfo($picture_name, PATHINFO_EXTENSION);
-    $picture_new_name = uniqid() . '.' . $picture_extension;
-    $upload_directory = 'uploads/';
+    // Insert data into the database
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "echurch";
 
-    if (move_uploaded_file($picture_tmp, $upload_directory . $picture_new_name)) {
-        // Insert data into the database (you'll need to set up your database connection)
-        $conn = new mysqli("localhost", "username", "password", "database_name");
+    $conn = new mysqli($servername, $username, $password, $database);
 
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-
-        $sql = "INSERT INTO registrations (name, email, phone, address, dob, gender, city, state, country, nationality, picture) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("sssssssssss", $name, $email, $phone, $address, $dob, $gender, $city, $state, $country, $nationality, $picture_new_name);
-        $stmt->execute();
-        $stmt->close();
-        $conn->close();
-
-        // Send an email (using PHPMailer library)
-        require 'PHPMailer/PHPMailer.php';
-        require 'PHPMailer/SMTP.php';
-
-        $mail = new PHPMailer\PHPMailer\PHPMailer();
-        $mail->isSMTP();
-        $mail->Host = 'mail.liberationprayerministries.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'info@liberationprayerministries.com';
-        $mail->Password = 'your_email_password';
-        $mail->SMTPSecure = 'ssl';
-        $mail->Port = 465;
-
-        $mail->setFrom('info@liberationprayerministries.com', 'Registration Notification');
-        $mail->addAddress($email, $name);
-
-        $mail->isHTML(true);
-        $mail->Subject = 'eChurch Registration Confirmation';
-        $mail->Body = 'Thank you for registering with eChurch.';
-
-        if ($mail->send()) {
-            echo 'Registration successful. Confirmation email sent.';
-        } else {
-            echo 'Registration successful, but email could not be sent.';
-        }
-    } else {
-        echo 'Failed to upload the picture.';
+    // Check for database connection errors
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
+
+    $sql = "INSERT INTO registrations (name, email, phone, address, dob, gender, city, state, country, nationality) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+    $stmt = $conn->prepare($sql);
+
+    // Check for SQL statement preparation errors
+    if (!$stmt) {
+        die("SQL statement preparation failed: " . $conn->error);
+    }
+
+    $stmt->bind_param("ssssssssss", $name, $email, $phone, $address, $dob, $gender, $city, $state, $country, $nationality);
+
+    // Check for binding parameters errors
+    if ($stmt->errno) {
+        die("Binding parameters failed: " . $stmt->error);
+    }
+
+    $stmt->execute();
+
+    // Check for execution errors
+    if ($stmt->errno) {
+        die("Execution of SQL statement failed: " . $stmt->error);
+    }
+
+    $stmt->close();
+    $conn->close();
+
+    // Redirect to google.com after successful registration
+    header("Location: https://www.google.com");
+    exit; // Ensure that no further code is executed after the redirection
 }
 ?>
