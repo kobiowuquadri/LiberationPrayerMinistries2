@@ -15,7 +15,7 @@ $sql = "INSERT INTO `page-message` (fullName, email, phoneNo)
         VALUES ('$fullName', '$email', '$phoneNo')";
 if ($conn->query($sql) === TRUE) {
     $to = "developertest@liberationprayerministries.com, iamabdullahitijani@gmail.com,info@liberationprayerministries.com,liberationprayerministries1@gmail.com";
-    $subject = "Registration Success";
+    $subject = "Message Recieved";
     $message = "Submitted Details\n\n";
     $message .= "Name: $fullName\n";
     $message .= "Email: $email\n";
