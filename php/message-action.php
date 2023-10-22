@@ -21,9 +21,9 @@ if ($conn->query($sql) === TRUE) {
     $to = "iamabdullahitijani@gmail.com, info@liberationprayerministries.com, liberationprayerministries1@gmail.com";
     $subject = "Newsletter Received";
     $message = "Newsletter Details\n\n";
-    $message .= "Name: $name\n";
+    $message .= "Name: $fullName\n";
     $message .= "Email: $email\n";
-    $message .= "Phone Number: $phone\n";
+    $message .= "Phone Number: $phoneNo\n";
     $headers = "From: info@liberationprayerministries.com\r\n";
     $headers .= "Reply-To: info@liberationprayerministries.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
