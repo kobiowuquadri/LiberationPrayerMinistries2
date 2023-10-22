@@ -85,43 +85,44 @@
     padding: 30px;
     border-radius: 20px;
     color: black;
+    }
 
-    & h1 {
+
+    .form_cover h1 {
         font-size: 2.5rem;
         width: 100%;
         text-align: center;
     }
 
-    & form {
+    .form_cover form {
         font-family: 'Courier New', Courier, monospace;
-
-        & p {
-            display: flex;
-            width: 100%;
-            align-items: center;
-
-            & label {
-                width: 30%;
-                font-weight: bold;
-                font-size: 1.5rem;
-                padding-right: 5px;
-            }
-
-            & input {
-                width: 70%;
-            }
-
-            & select {
-                background-color: white;
-                width: 70%;
-                padding: 10px;
-                color: black;
-            }
-
-            & input[type="submit"] {
-                background-color: blue;
-                color: white;
-            }
-        }
     }
+
+    .form_cover p {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .form_cover p label {
+        width: 30%;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-right: 5px;
+    }
+
+    .form_cover p input {
+        width: 70%;
+    }
+
+    .form_cover p select {
+        background-color: white;
+        width: 70%;
+        padding: 10px;
+        color: black;
+    }
+
+    .form_cover p input[type="submit"] {
+        background-color: blue;
+        color: white;
     }
