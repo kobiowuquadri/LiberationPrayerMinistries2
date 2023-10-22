@@ -11,7 +11,7 @@ $name = $_POST['fullName'];
 $email = $_POST['email'];
 $phone = $_POST['phoneNo'];
 
-$sql = "INSERT INTO message (fullName, email, phoneNo)
+$sql = "INSERT INTO page-message (fullName, email, phoneNo)
         VALUES ('$fullName', '$email', '$phoneNo')";
 if ($conn->query($sql) === TRUE) {
     $to = "developertest@liberationprayerministries.com, iamabdullahitijani@gmail.com";
