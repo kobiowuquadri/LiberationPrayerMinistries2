@@ -545,10 +545,6 @@ body.custom-background { background-color: #360051; }
                                                         </li>
                                                         <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1806 current_page_item menu-item-1878">
                                                             <a href="index.html" aria-current="page" class="elementor-item elementor-item-active">eChurch</a>
-                                                           
-                                                        </li>
-                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1878">
-                                                            <a href="../Testimonies/Testimonies.html" class="elementor-item">Testimonies</a>
                                                         </li>
                                                     </ul>
                                                 </nav>
@@ -581,9 +577,6 @@ body.custom-background { background-color: #360051; }
                                                         </li>
                                                         <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1806 current_page_item menu-item-1878">
                                                             <a href="index.html" aria-current="page" class="elementor-item elementor-item-active">eChurch</a>
-                                                        </li>
-                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1878">
-                                                            <a href="../Testimonies/Testimonies.html" class="elementor-item">Testimonies</a>
                                                         </li>
                                                     </ul>
                                                 </nav>
@@ -788,55 +781,60 @@ body.custom-background { background-color: #360051; }
                                         </div>
                                     </div>
                                     <div
-                                    class="elementor-element elementor-element-799e4495 elementor-button-align-stretch elementor-widget elementor-widget-form"
-                                >
-                                    <div class="elementor-widget-container">
-                                        <form method="post" action="message.php">
-                                            <div class="elementor-form-fields-wrapper elementor-labels-">
-                                                <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_443705b elementor-col-100">
-                                                    <label class="elementor-field-label elementor-screen-only">Name</label>
-                                                    <input
-                                                        size="1"
-                                                        type="text"
-                                                        name="fullName"
-                                                        class="elementor-field elementor-size-md  elementor-field-textual"
-                                                        placeholder="Full Name"
-                                                        required="required"
-                                                     
-                                                    >
+                                        class="elementor-element elementor-element-799e4495 elementor-button-align-stretch elementor-widget elementor-widget-form"
+                                        data-id="799e4495"
+                                        data-element_type="widget"
+                                        data-settings="{&quot;button_width&quot;:&quot;33&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}"
+                                        data-widget_type="form.default"
+                                    >
+                                        <div class="elementor-widget-container">
+                                            <form class="elementor-form" method="post" name="New Form">
+                                                <div class="elementor-form-fields-wrapper elementor-labels-">
+                                                    <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_443705b elementor-col-100 elementor-field-required">
+                                                        <label for="form-field-field_443705b" class="elementor-field-label elementor-screen-only">Name</label>
+                                                        <input
+                                                            size="1"
+                                                            type="text"
+                                                            name="fullname"
+                                                            class="elementor-field elementor-size-md  elementor-field-textual"
+                                                            placeholder="Full Name"
+                                                            required="required"
+                                                            aria-required="true"
+                                                        >
+                                                    </div>
+                                                    <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-33 elementor-field-required">
+                                                        <label for="form-field-email" class="elementor-field-label elementor-screen-only">Email</label>
+                                                        <input
+                                                            size="1"
+                                                            type="email"
+                                                            name="email"
+                                                            class="elementor-field elementor-size-md  elementor-field-textual"
+                                                            placeholder="Email"
+                                                            required="required"
+                                                            aria-required="true"
+                                                        >
+                                                    </div>
+                                                    <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_112b1a2 elementor-col-33">
+                                                        <label for="form-field-field_112b1a2" class="elementor-field-label elementor-screen-only">Phone</label>
+                                                        <input
+                                                            size="1"
+                                                            type="text"
+                                                            name="phoneNo"
+                                                            class="elementor-field elementor-size-md  elementor-field-textual"
+                                                            placeholder="Phone Number"
+                                                        >
+                                                    </div>
+                                                    <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-33 e-form__buttons">
+                                                        <button type="submit" class="elementor-button elementor-size-md">
+                                                            <span>
+                                                                <span class=" elementor-button-icon"></span>
+                                                                <span class="elementor-button-text">SUBMIT</span>
+                                                            </span>
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                                <div class="elementor-field-type-email elementor-field-group elementor-column elementor-col-33">
-                                                    <label class="elementor-field-label elementor-screen-only">Email</label>
-                                                    <input
-                                                        size="1"
-                                                        type="email"
-                                                        name="email"
-                                                        class="elementor-field elementor-size-md  elementor-field-textual"
-                                                        placeholder="Email"
-                                                        required="required"
-                                                     
-                                                    >
-                                                </div>
-                                                <div class="elementor-field-type-text elementor-field-group elementor-column elementor-col-33">
-                                                    <label for="phoneNo" class="elementor-field-label elementor-screen-only">Phone</label>
-                                                    <input
-                                                        type="text"
-                                                        name="phoneNo"
-                                                        class="elementor-field elementor-size-md  elementor-field-textual"
-                                                        placeholder="Phone Number"
-                                                    >
-                                                </div>
-                                                <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-33">
-                                                    <button type="submit" class="elementor-button elementor-size-md">
-                                                        <span>
-                                                            <span class=" elementor-button-icon"></span>
-                                                            <span class="elementor-button-text">SUBMIT</span>
-                                                        </span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
