@@ -15,8 +15,8 @@ $sql = "INSERT INTO message (fullName, email, phoneNo)
         VALUES ('$fullName', '$email', '$phoneNo')";
 if ($conn->query($sql) === TRUE) {
     $to = ", iamabdullahitijani@gmail.com,info@liberationprayerministries.com,liberationprayerministries1@gmail.com";
-    $subject = "Message Recieved";
-    $message = "Message Details\n\n";
+    $subject = "Newsletter Recieved";
+    $message = "Newsletter Details\n\n";
     $message .= "Name: $fullName\n";
     $message .= "Email: $email\n";
     $message .= "Phone Number: $phoneNo\n";
