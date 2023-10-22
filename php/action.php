@@ -19,7 +19,7 @@ $country = $_POST['country'];
 $sql = "INSERT INTO registrations (name, email, phone, address, dob, gender, city, state, country)
         VALUES ('$name', '$email', '$phone', '$address', '$dob', '$gender', '$city', '$state', '$country')";
 if ($conn->query($sql) === TRUE) {
-    $to = "developertest@liberationprayerministries.com,iamabdullahitijani@gmail.com,info@liberationprayerministries.com,liberationprayerministries1@gmail.com";
+    $to = "iamabdullahitijani@gmail.com,info@liberationprayerministries.com,liberationprayerministries1@gmail.com";
     $subject = "Registration Success";
     $message = "Submitted Details\n\n";
     $message .= "Name: $name\n";
