@@ -1,127 +1,82 @@
-@media (max-width:768px) {
-    #bg_change {
-        /* margin-top: 10% !important; */
-        /* background-size: contain !important; */
-        height: 100vh !important;
-    }
+@media (max-width: 768px) {
+  #bg_change {
+    /* margin-top: 10% !important; */
+    /* background-size: contain !important; */
+    height: 100vh !important;
+  }
 
-    #small__text {
-        font-size: 1.8rem !important;
-    }
+  #small__text {
+    font-size: 1.8rem !important;
+  }
 
-    .con {
-        background-color: rgb(106, 175, 252);
-    }
+  .con {
+    background-color: rgb(106, 175, 252);
+  }
 
-    #bg_switch {
-        background-size: contain !important;
-        background-repeat: repeat;
-        border: none;
-    }
+  #bg_switch {
+    background-size: contain !important;
+    background-repeat: repeat;
+    border: none;
+  }
 
-    #bg____switch {
-        background-size: contain;
-    }
+  #bg____switch {
+    background-size: contain;
+  }
 
-    #bg____switch_1 {
-        background-size: contain;
-        height: 50vh;
-    }
+  #bg____switch_1 {
+    background-size: contain;
+    height: 50vh;
+  }
 
-    #mobile_h1 {
-        padding-bottom: 70px;
-    }
+  #mobile_h1 {
+    padding-bottom: 70px;
+  }
 
-    #change_display {
-        padding-top: 100px;
-    }
+  #change_display {
+    padding-top: 100px;
+  }
 }
 
 .elementor-col-33 img {
-    width: 200px !important;
-    /* Set a specific width */
-    height: 100px !important;
-    /* Set a specific height */
-    font-weight: bolder !important;
-    background-color: white !important;
-    border-radius: 50% !important;
-    /* Creates an oval shape */
-    font-size: 5rem !important;
+  width: 200px !important;
+  /* Set a specific width */
+  height: 100px !important;
+  /* Set a specific height */
+  font-weight: bolder !important;
+  background-color: white !important;
+  border-radius: 50% !important;
+  /* Creates an oval shape */
+  font-size: 5rem !important;
 }
 
-@media((min-width:590px) and (max-width:1024px)) {
-    .con2 {
-        margin-top: 200px;
-    }
+@media ((min-width: 590px) and (max-width:1024px)) {
+  .con2 {
+    margin-top: 200px;
+  }
 }
 
 #image_logo {
-    font-size: 5rem !important;
+  font-size: 5rem !important;
 }
 
 #gold_color {
-    color: rgb(240, 165, 0) !important;
+  color: rgb(240, 165, 0) !important;
 }
 
 #bg_gold {
-    background-color: rgb(240, 165, 0) !important;
+  background-color: rgb(240, 165, 0) !important;
 }
 
 .bg {
-    background-color: green !important;
-    font-size: 3rem !important;
+  background-color: green !important;
+  font-size: 3rem !important;
 }
 
 #bg_white {
-    background-color: white;
+  background-color: white;
 }
 
 #white_color {
-    color: white;
+  color: white;
 }
 
-.form_cover {
-    background-color: #eee;
-    padding: 30px;
-    border-radius: 20px;
-    color: black;
-
-    & h1 {
-        font-size: 2.5rem;
-        width: 100%;
-        text-align: center;
-    }
-
-    & form {
-        font-family: 'Courier New', Courier, monospace;
-
-        & p {
-            display: flex;
-            width: 100%;
-            align-items: center;
-
-            & label {
-                width: 30%;
-                font-weight: bold;
-                font-size: 1.5rem;
-                padding-right: 5px;
-            }
-
-            & input {
-                width: 70%;
-            }
-
-            & select {
-                background-color: white;
-                width: 70%;
-                padding: 10px;
-                color: black;
-            }
-
-            & input[type="submit"] {
-                background-color: blue;
-                color: white;
-            }
-        }
-    }
-    }
