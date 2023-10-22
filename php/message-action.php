@@ -20,8 +20,8 @@ if ($conn->query($sql) === TRUE) {
     $message .= "Name: $fullName\n";
     $message .= "Email: $email\n";
     $message .= "Phone Number: $phoneNo\n";
-    $headers = "From: developertest@liberationprayerministries.com\r\n";
-    $headers .= "Reply-To: developertest@liberationprayerministries.com\r\n";
+    $headers = "From: info@liberationprayerministries.com\r\n";
+    $headers .= "Reply-To: info@liberationprayerministries.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     mail($to, $subject, $message, $headers);
