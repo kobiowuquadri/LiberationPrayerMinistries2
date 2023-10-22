@@ -25,7 +25,7 @@ if ($conn->query($sql) === TRUE) {
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     mail($to, $subject, $message, $headers);
-    header('Location: #');
+    header("Location: {$_SERVER['REQUEST_URI']}");
     exit;
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
