@@ -14,9 +14,9 @@ $phone = $_POST['phoneNo'];
 $sql = "INSERT INTO `page-message` (fullName, email, phoneNo)
         VALUES ('$fullName', '$email', '$phoneNo')";
 if ($conn->query($sql) === TRUE) {
-    $to = "developertest@liberationprayerministries.com, iamabdullahitijani@gmail.com,info@liberationprayerministries.com,liberationprayerministries1@gmail.com";
+    $to = ", iamabdullahitijani@gmail.com,info@liberationprayerministries.com,liberationprayerministries1@gmail.com";
     $subject = "Message Recieved";
-    $message = "Submitted Details\n\n";
+    $message = "Message Details\n\n";
     $message .= "Name: $fullName\n";
     $message .= "Email: $email\n";
     $message .= "Phone Number: $phoneNo\n";
