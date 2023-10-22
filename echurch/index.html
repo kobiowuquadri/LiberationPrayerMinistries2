@@ -659,7 +659,7 @@ body.custom-background { background-color: #360051; }
                             <div class="form_cover">
                                 <h1>LPM eChurch Registration</h1>
                                 <!-- Form start -->
-                                <form action="#" method="post">
+                                <form action="action.php" method="POST">
                                     <p>
                                         <label for="name">Name</label>
                                         <input type="text" name="name" placeholder="Enter your Fullname">
@@ -670,22 +670,23 @@ body.custom-background { background-color: #360051; }
                                     </p>
                                     <p>
                                         <label for="phoneNo">PhoneNo</label>
-                                        <input type="number" name="phoneNo" placeholder="Enter your PhoneNumber">
+                                        <input type="number" name="phone" placeholder="Enter your PhoneNumber">
                                     </p>
                                     <p>
-                                        <label for="address">Name</label>
-                                        <input type="text" name="address" placeholder="Enter your Address">
-                                    </p>
+    <label for="address">Address</label>
+    <input type="text" name="address" placeholder="Enter your Address">
+</p>
+
                                     <p>
                                         <label for="DOB">Date of Birth</label>
-                                        <input type="date" name="DOB">
+                                        <input type="date" name="dob" value="">
                                     </p>
                                     <p>
                                         <label for="gender">
                                             Gender
                                         </label>
                                         <select name="gender">
-                                            <option value="Select Gender">Gender</option>
+                                            <!--<option value="Select Gender">Gender</option>-->
                                             <option value="male">Male</option>
                                             <option value="male">Female</option>
                                         </select>
