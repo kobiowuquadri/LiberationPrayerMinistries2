@@ -9,17 +9,17 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$name = $_POST['fullName'];
+$fullName = $_POST['fullName'];
 $email = $_POST['email'];
-$phone = $_POST['phoneNo'];
+$phoneNo = $_POST['phoneNo'];
 $prayerRequest = $_POST['prayerRequest'];
 
 // SQL query to insert data into the "message" table
 $sql = "INSERT INTO prayer (fullName, email, phoneNo, prayerRequest)
-        VALUES ('$name', '$email', '$phone', '$prayerRequest')";
+        VALUES ('$fullName', '$email', '$phoneNo', '$prayerRequest')";
 
 if ($conn->query($sql) === TRUE) {
-    $to = "iamabdullahitijani@gmail.com, info@liberationprayerministries.com, liberationprayerministries1@gmail.com";
+    $to = "liberationprayerministries1@gmail.com";
     $subject = "Prayer Request";
     $message = "Prayer Request\n\n";
     $message .= "Name: $fullName\n";
@@ -28,7 +28,7 @@ if ($conn->query($sql) === TRUE) {
     $message .= "Prayer Request: $prayerRequest\n";
 
     $headers = "From: info@liberationprayerministries.com\r\n";
-    $headers .= "Reply-To: info@liberationprayerministries.com\r\n";
+    $headers .= "Reply-To: liberationprayerministries1@gmail.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
