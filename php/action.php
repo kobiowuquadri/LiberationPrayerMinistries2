@@ -19,7 +19,7 @@ $country = $_POST['country'];
 $sql = "INSERT INTO registrations (name, email, phone, address, dob, gender, city, state, country)
         VALUES ('$name', '$email', '$phone', '$address', '$dob', '$gender', '$city', '$state', '$country')";
 if ($conn->query($sql) === TRUE) {
-    $to = "iamabdullahitijani@gmail.com,info@liberationprayerministries.com,liberationprayerministries1@gmail.com";
+    $to = "liberationprayerministries1@gmail.com";
     $subject = "Registration Success";
     $message = "Submitted Details\n\n";
     $message .= "Name: $name\n";
@@ -32,7 +32,7 @@ if ($conn->query($sql) === TRUE) {
     $message .= "State: $state\n";
     $message .= "Country: $country\n";
     $headers = "From: info@liberationprayerministries.com\r\n";
-    $headers .= "Reply-To: info@liberationprayerministries.com\r\n";
+    $headers .= "Reply-To: liberationprayerministries1@gmail.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     mail($to, $subject, $message, $headers);
